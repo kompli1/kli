@@ -1,9 +1,11 @@
 import https from 'node:https';
 import fs from 'node:fs/promises';
+import path from 'node:path';
 
 const channel = process.env.TELEGRAM_REVIEWS_CHANNEL || 'otziv_kavistore';
 const limit = Number(process.env.REVIEWS_LIMIT || 8);
 const url = `https://t.me/s/${channel}`;
+const reviewsDir = 'assets/reviews';
 
 const manualReviews = [
   {
@@ -33,7 +35,7 @@ const manualReviews = [
   }
 ];
 
-function request(url) {
+function requestText(url) {
   return new Promise((resolve, reject) => {
     const req = https.get(url, {
       headers: {
@@ -42,10 +44,10 @@ function request(url) {
       }
     }, (res) => {
       if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return resolve(request(new URL(res.headers.location, url).toString()));
+        return resolve(requestText(new URL(res.headers.location, url).toString()));
       }
       if (res.statusCode !== 200) {
-        reject(new Error(`Telegram returned HTTP ${res.statusCode}`));
+        reject(new Error(`HTTP ${res.statusCode}`));
         res.resume();
         return;
       }
@@ -55,9 +57,32 @@ function request(url) {
       res.on('end', () => resolve(data));
     });
     req.on('error', reject);
-    req.setTimeout(25000, () => {
-      req.destroy(new Error('Request timeout'));
+    req.setTimeout(25000, () => req.destroy(new Error('Request timeout')));
+  });
+}
+
+function requestBuffer(url) {
+  return new Promise((resolve, reject) => {
+    const req = https.get(url, {
+      headers: {
+        'user-agent': 'Mozilla/5.0 (compatible; GitHubPagesReviewsBot/1.0)',
+        'accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+      }
+    }, (res) => {
+      if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        return resolve(requestBuffer(new URL(res.headers.location, url).toString()));
+      }
+      if (res.statusCode !== 200) {
+        reject(new Error(`Image HTTP ${res.statusCode}`));
+        res.resume();
+        return;
+      }
+      const chunks = [];
+      res.on('data', chunk => chunks.push(chunk));
+      res.on('end', () => resolve({ buffer: Buffer.concat(chunks), contentType: res.headers['content-type'] || '' }));
     });
+    req.on('error', reject);
+    req.setTimeout(25000, () => req.destroy(new Error('Image timeout')));
   });
 }
 
@@ -108,13 +133,57 @@ function extractReviews(html) {
     const dateMatch = part.match(/<time[^>]+datetime="([^"]+)"/);
     const date = dateMatch ? dateMatch[1].slice(0, 10) : 'Telegram';
 
-    if (text || image) {
-      out.push({ text, image, link, meta: date });
-    }
+    if (text || image) out.push({ text, image, link, meta: date });
   }
   return out.slice(-limit).reverse();
 }
 
+function extensionFromContentType(contentType, fallbackUrl) {
+  const clean = String(contentType || '').split(';')[0].trim().toLowerCase();
+  if (clean.includes('webp')) return '.webp';
+  if (clean.includes('png')) return '.png';
+  if (clean.includes('gif')) return '.gif';
+  if (clean.includes('jpeg') || clean.includes('jpg')) return '.jpg';
+  const ext = path.extname(new URL(fallbackUrl).pathname).toLowerCase();
+  if (['.jpg', '.jpeg', '.png', '.webp', '.gif'].includes(ext)) return ext === '.jpeg' ? '.jpg' : ext;
+  return '.jpg';
+}
+
+async function localizeReviewImages(items) {
+  await fs.mkdir(reviewsDir, { recursive: true });
+  const used = new Set();
+  let counter = 1;
+
+  for (const item of items) {
+    if (!item.image || !/^https:\/\//i.test(item.image)) continue;
+    try {
+      const original = item.image;
+      const { buffer, contentType } = await requestBuffer(original);
+      if (!buffer || buffer.length < 1000) throw new Error('Image too small');
+      const ext = extensionFromContentType(contentType, original);
+      const name = `review-${String(counter).padStart(2, '0')}${ext}`;
+      counter += 1;
+      const filePath = path.join(reviewsDir, name);
+      await fs.writeFile(filePath, buffer);
+      item.image = filePath.replaceAll('\\', '/');
+      used.add(item.image);
+    } catch (err) {
+      console.warn(`Could not download review image: ${err.message}`);
+      // Keep external URL as fallback. index.html hides broken images if Telegram blocks hotlinking.
+    }
+  }
+
+  // Remove old localized review images that are no longer used.
+  try {
+    const files = await fs.readdir(reviewsDir);
+    await Promise.all(files.map(async (file) => {
+      const full = `${reviewsDir}/${file}`;
+      if (!used.has(full) && /^review-\d+\./.test(file)) await fs.rm(full, { force: true });
+    }));
+  } catch (_) {}
+
+  return items;
+}
 
 function mergeReviews(fetchedReviews, manualReviews) {
   const result = [];
@@ -129,17 +198,17 @@ function mergeReviews(fetchedReviews, manualReviews) {
 }
 
 try {
-  const html = await request(url);
-  const fetchedReviews = extractReviews(html);
+  const html = await requestText(url);
+  const fetchedReviews = await localizeReviewImages(extractReviews(html));
   const reviews = mergeReviews(fetchedReviews, manualReviews);
-  if (!reviews.length) {
-    throw new Error('No public reviews found. Check that the Telegram channel is public and has visible posts.');
-  }
+  if (!reviews.length) throw new Error('No public reviews found. Check that the Telegram channel is public and has visible posts.');
+
   const data = {
     channel,
     updated_at: new Date().toISOString(),
     source: url,
     manual_reviews: manualReviews.length,
+    image_mode: 'local-download-to-assets/reviews',
     reviews
   };
   await fs.writeFile('reviews.json', JSON.stringify(data, null, 2), 'utf8');

@@ -1,27 +1,16 @@
-KAVISTORE Mobile Telegram Landing для GitHub Pages
+KAVISTORE Mobile Telegram Landing — фикс загрузки фото
 
-Что внутри:
-- index.html — мобильная страница
-- reviews.json — отзывы для карусели
-- assets/telegram-verified.png — галочка верификации
-- scripts/fetch-reviews.mjs — скрипт для автообновления отзывов из Telegram
-- .github/workflows/update-reviews.yml — GitHub Actions для обновления reviews.json
-- .nojekyll — чтобы GitHub Pages корректно отдавал папку .github и assets
+Что исправлено:
+- Фото канала больше не зависит от временной ссылки Telegram CDN: добавлен локальный assets/kavistore-avatar.svg.
+- Фото отзывов из Telegram при автообновлении скачиваются в assets/reviews/ и подставляются локально.
+- Если Telegram всё равно заблокирует внешнюю картинку, страница не покажет битую иконку, а аккуратно уберёт пустое изображение.
+- GitHub Actions теперь коммитит не только reviews.json, но и assets/reviews/*.
 
-Как загрузить:
-1. Распакуйте ZIP.
-2. Загрузите все файлы и папки в корень репозитория GitHub.
-3. В GitHub откройте Settings → Pages.
-4. Выберите Deploy from a branch → main → /root.
-5. Подождите 1–3 минуты.
+Как загрузить на GitHub Pages:
+1. Распакуй ZIP.
+2. Загрузи ВСЕ файлы и папки в корень репозитория: index.html, assets, scripts, .github, reviews.json, .nojekyll.
+3. В GitHub открой Settings → Pages → Deploy from a branch → main → /root.
+4. После загрузки открой Actions → Update Telegram reviews → Run workflow, чтобы сразу подтянуть отзывы и фото.
 
 Важно:
-- GitHub Pages не поддерживает PHP, поэтому отзывы берутся из reviews.json.
-- GitHub Actions пробует подтягивать отзывы из https://t.me/s/otziv_kavistore и добавляет их к ручным отзывам.
-- Если Telegram временно не отдаёт канал, сайт всё равно показывает отзывы из reviews.json.
-- Facebook Pixel ID: 1676612600147113.
-- Событие PageView срабатывает при открытии страницы.
-- Событие Lead и TelegramClick срабатывают при клике на аватар или кнопку Telegram.
-
-
-Обновление: фон заменён на фирменный KAVISTORE/KV в той же зелёно-бежевой палитре, без старых Telegram-фигур.
+GitHub Pages не выполняет PHP, поэтому всё работает через reviews.json + GitHub Actions.
