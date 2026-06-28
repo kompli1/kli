@@ -1,400 +1,257 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#ebe6d8" />
-  <title>Telegram: View @kavi_store</title>
-
-  <meta property="og:title" content="KAVISTORE" />
-  <meta property="og:site_name" content="Telegram" />
-  <meta property="og:description" content="KAVISTORE — Telegram канал" />
-  <meta property="og:image" content="assets/photos/kavistore-black-logo-final-v4.jpg" />
-  <meta name="twitter:card" content="summary" />
-  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicons/favicon-black-final-64.png?v=4" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-black-final-32.png?v=4" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-black-final-16.png?v=4" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-black-final-180.png?v=4" />
-  <link rel="shortcut icon" href="favicon-black-final.ico?v=4" />
-
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1676612600147113');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1676612600147113&ev=PageView&noscript=1" alt="" /></noscript>
-
-  <style>
-    :root {
-      --text: #1d252d;
-      --muted: #707579;
-      --button: #54a9eb;
-      --button-press: #429ce0;
-      --link: #168acd;
-      --border: rgba(255,255,255,.38);
-      --card: rgba(255,255,255,.82);
-      --shadow: 0 20px 40px rgba(63, 72, 52, .14), 0 2px 12px rgba(0,0,0,.08);
-      --safe-bottom: env(safe-area-inset-bottom, 0px);
-    }
-
-    * { box-sizing: border-box; }
-    html { min-height: 100%; -webkit-text-size-adjust: 100%; background: #ebe6d8; }
-    body {
-      margin: 0;
-      min-height: 100svh;
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      overflow-x: hidden;
-      background: transparent;
-    }
-
-
-    .tg-bg {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 14% 10%, rgba(255,255,255,.42), transparent 26%),
-        radial-gradient(circle at 82% 88%, rgba(107,133,99,.30), transparent 34%),
-        radial-gradient(circle at 12% 78%, rgba(215,202,159,.32), transparent 30%),
-        linear-gradient(135deg, #eee9d9 0%, #ece6d3 32%, #dfe5c9 66%, #b9c9a7 100%);
-      transform: translateZ(0);
-    }
-    .tg-bg::before {
-      content: "";
-      position: absolute;
-      inset: -40px;
-      opacity: .32;
-      background-image:
-        linear-gradient(120deg, rgba(255,255,255,.32), rgba(255,255,255,0) 34%),
-        radial-gradient(circle at 22% 26%, rgba(116,126,93,.16) 0 1px, transparent 1.4px),
-        radial-gradient(circle at 74% 62%, rgba(255,255,255,.34) 0 1px, transparent 1.5px);
-      background-size: 100% 100%, 18px 18px, 22px 22px;
-      filter: blur(.1px);
-    }
-    .tg-bg::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(to bottom, rgba(255,255,255,.18), rgba(255,255,255,.03) 34%, rgba(255,255,255,.13)),
-        radial-gradient(circle at 50% 45%, rgba(255,255,255,.24), transparent 38%);
-    }
-    .bg-word {
-      position: absolute;
-      z-index: 1;
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 600;
-      letter-spacing: .10em;
-      line-height: 1;
-      color: rgba(73, 83, 54, .32);
-      text-transform: uppercase;
-      white-space: nowrap;
-      pointer-events: none;
-      user-select: none;
-      text-shadow: 0 1px 0 rgba(255,255,255,.46);
-    }
-    .bg-kv-1 { left: -48px; top: 58px; font-size: 138px; opacity: .30; transform: rotate(-9deg); }
-    .bg-kv-2 { right: -38px; top: 360px; font-size: 118px; opacity: .24; transform: rotate(-8deg); }
-    .bg-kv-3 { left: -24px; bottom: -18px; font-size: 88px; opacity: .22; transform: rotate(4deg); }
-    .bg-store-1 { right: -34px; top: 114px; font-size: 27px; opacity: .38; transform: rotate(90deg); transform-origin: center; }
-    .bg-store-2 { left: -78px; top: 270px; font-size: 27px; opacity: .34; transform: rotate(-90deg); transform-origin: center; }
-    .bg-store-3 { left: 22px; bottom: 70px; font-size: 28px; opacity: .34; transform: rotate(-7deg); }
-    .bg-store-4 { left: 112px; top: 72px; font-size: 24px; opacity: .32; transform: rotate(-11deg); }
-    @media (min-width: 431px) {
-      .bg-kv-1 { left: calc(50% - 285px); }
-      .bg-kv-2 { right: calc(50% - 275px); }
-      .bg-store-1 { right: calc(50% - 255px); }
-      .bg-store-2 { left: calc(50% - 275px); }
-      .bg-store-3 { left: calc(50% - 190px); }
-      .bg-store-4 { left: calc(50% - 90px); }
-    }
-
-
-    .app { position: relative; z-index: 1; min-height: 100svh; display: flex; flex-direction: column; }
-    .topbar {
-      height: 48px;
-      flex: 0 0 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255,255,255,.48);
-      border-bottom: 1px solid rgba(255,255,255,.30);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
-    .tg-brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #202b36; font-size: 20px; font-weight: 700; letter-spacing: -.25px; }
-    .tg-brand-icon { width: 31px; height: 31px; border-radius: 50%; display: grid; place-items: center; background: #54a9eb; color: #fff; box-shadow: 0 6px 14px rgba(84,169,235,.32); }
-    .tg-brand-icon svg { width: 17px; height: 17px; display: block; }
-
-    .wrap {
-      width: 100%;
-      max-width: 430px;
-      margin: 0 auto;
-      padding: 16px 14px calc(20px + var(--safe-bottom));
-      flex: 1;
-      display: flex;
-      align-items: center;
-    }
-    .card {
-      width: 100%;
-      margin: 0 auto;
-      background: var(--card);
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid var(--border);
-      padding: 22px 16px 16px;
-      text-align: center;
-    }
-
-    .avatar-link { width: 104px; height: 104px; border-radius: 999px; overflow: hidden; display: inline-block; background: #000; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); -webkit-tap-highlight-color: transparent; }
-    .avatar-link img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-    .title-row { margin-top: 13px; display: flex; align-items: center; justify-content: center; gap: 6px; }
-    .channel-title { font-size: 25px; line-height: 30px; font-weight: 600; letter-spacing: -.35px; }
-    .verified { width: 19px; height: 19px; flex: 0 0 19px; display: block; object-fit: contain; transform: translateY(1px); }
-    .subscribers { margin-top: 3px; color: var(--muted); font-size: 14px; line-height: 19px; }
-
-    .action { margin: 18px auto 0; }
-    .tg-button {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      max-width: 330px;
-      height: 52px;
-      border-radius: 26px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      color: #fff;
-      background: var(--button);
-      text-decoration: none;
-      font-size: 17px;
-      line-height: 52px;
-      font-weight: 700;
-      box-shadow: 0 10px 20px rgba(84,169,235,.28);
-      -webkit-tap-highlight-color: transparent;
-      touch-action: manipulation;
-    }
-    .tg-button:active { transform: scale(.985); background: var(--button-press); }
-    .tg-button svg { width: 20px; height: 20px; flex: 0 0 20px; }
-    .tg-button::after { content: ""; position: absolute; top: 0; left: -60%; width: 48%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,.38), transparent); transform: skewX(-22deg); animation: shine 3.5s ease-in-out infinite; }
-    @keyframes shine { 0%, 48% { left: -60%; } 72%, 100% { left: 130%; } }
-
-    .reviews { margin-top: 18px; text-align: left; }
-    .reviews-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 0 2px 9px; }
-    .reviews-title { display: flex; align-items: center; gap: 7px; font-size: 15px; line-height: 20px; font-weight: 700; }
-    .reviews-title span { width: 20px; height: 20px; border-radius: 50%; display: inline-grid; place-items: center; color: #fff; background: var(--button); font-size: 12px; }
-    .reviews-link { color: var(--link); font-size: 12px; line-height: 18px; text-decoration: none; white-space: nowrap; }
-    .reviews-box { overflow: hidden; min-height: 143px; border: 1px solid rgba(255,255,255,.42); border-radius: 16px; background: rgba(248,250,251,.74); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
-    .reviews-track { display: flex; transition: transform .42s ease; will-change: transform; }
-    .review { min-width: 100%; padding: 14px 14px 12px; color: inherit; text-decoration: none; }
-    .review-text { font-size: 14px; line-height: 20px; color: var(--text); max-height: 100px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; word-break: break-word; white-space: pre-line; }
-    .review-image-wrap { width: 100%; height: 114px; border-radius: 12px; overflow: hidden; background: #eef2f5; margin-bottom: 8px; }
-    .review-image { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .review-meta { margin-top: 8px; display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 12px; line-height: 16px; }
-    .review-badge { color: var(--link); white-space: nowrap; }
-    .dots { height: 17px; display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 8px; }
-    .dot { width: 6px; height: 6px; border: 0; border-radius: 50%; background: rgba(112,117,121,.35); padding: 0; }
-    .dot.active { background: var(--button); }
-    .loading { min-width: 100%; padding: 22px 14px; color: var(--muted); text-align: center; font-size: 14px; line-height: 20px; }
-
-    @media (max-width: 380px) {
-      .wrap { padding-left: 12px; padding-right: 12px; }
-      .card { padding: 20px 13px 14px; border-radius: 18px; }
-      .avatar-link { width: 96px; height: 96px; }
-      .channel-title { font-size: 24px; }
-      .tg-button { height: 50px; font-size: 16px; }
-      .reviews-box { min-height: 136px; }
-      .review-text { font-size: 13.5px; line-height: 19.5px; }
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0f0f0f" />
+<title>KAVISTORE — каталог одежды в Telegram</title>
+<meta name="description" content="KAVISTORE — одежда и обувь с доставкой. Реальные фото товаров, цены, отзывы и заказ через Telegram." />
+<meta property="og:title" content="KAVISTORE — каталог одежды" />
+<meta property="og:site_name" content="KAVISTORE" />
+<meta property="og:description" content="Смотреть каталог, цены и новинки KAVISTORE в Telegram." />
+<meta property="og:image" content="assets/photos/kavistore-black-logo-final-v4.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicons/favicon-black-final-64.png?v=7" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-black-final-32.png?v=7" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-black-final-16.png?v=7" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-black-final-180.png?v=7" />
+<link rel="shortcut icon" href="favicon-black-final.ico?v=7" />
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1676612600147113');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1676612600147113&ev=PageView&noscript=1" /></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+:root{--black:#101010;--text:#171717;--muted:#747474;--bg:#f3eadc;--blue:#149fe3;--line:rgba(0,0,0,.08);--safe-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{background:#0b0b0b}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#0b0b0b;overflow-x:hidden}.page{max-width:520px;margin:0 auto;min-height:100svh;background:linear-gradient(180deg,#0d0d0d 0%,#1a1714 25%,#f4eadc 49%,#fff8ef 100%);box-shadow:0 0 70px rgba(0,0,0,.55);padding-bottom:88px}.top{height:58px;position:sticky;top:0;z-index:20;background:rgba(8,8,8,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between;padding:0 16px}.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}.brand img.logo{width:38px;height:38px;border-radius:50%;object-fit:cover;background:#000}.brand b{font-size:16px;letter-spacing:.15em}.verify{width:18px;height:18px;object-fit:contain}.top-link{color:#111;background:#fff;border-radius:999px;padding:9px 14px;text-decoration:none;font-weight:900;font-size:13px}.hero{padding:20px 16px 18px;color:#fff;position:relative;overflow:hidden}.hero-card{background:linear-gradient(145deg,#111,#2a221d 45%,#c7a66d);border:1px solid rgba(255,255,255,.12);border-radius:30px;padding:14px;box-shadow:0 24px 55px rgba(0,0,0,.38)}.logo-big{display:block;width:118px;height:118px;object-fit:cover;border-radius:26px;margin:0 auto 12px;background:#000}.hero-products{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:12px 0}.hero-products img{width:100%;aspect-ratio:1/1.05;object-fit:cover;border-radius:20px;background:#eee}h1{font-size:31px;line-height:1.04;letter-spacing:-.8px;margin:10px 0 8px}.hero p{color:rgba(255,255,255,.78);font-size:15px;line-height:1.45;margin:0}.badges{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.badge{border-radius:16px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);padding:10px;font-size:12px}.badge strong{display:block;font-size:15px;color:#fff}.cta{display:flex;align-items:center;justify-content:center;width:100%;height:58px;border-radius:999px;background:linear-gradient(135deg,#22aaf4,#068bd0);color:#fff;text-decoration:none;font-weight:950;font-size:17px;box-shadow:0 16px 34px rgba(6,139,208,.35);margin-top:16px}.under{font-size:12px;color:rgba(255,255,255,.65);text-align:center;margin-top:8px}.strip{display:flex;gap:8px;overflow:auto;padding:14px 16px;scrollbar-width:none}.pill{flex:0 0 auto;background:#fff;border:1px solid var(--line);box-shadow:0 8px 18px rgba(0,0,0,.05);border-radius:999px;padding:10px 12px;font-size:12px;font-weight:850}section{padding:16px}.block-title{display:flex;align-items:flex-end;justify-content:space-between;margin:2px 0 14px}.block-title h2{margin:0;font-size:32px;letter-spacing:-.9px;line-height:1.05}.block-title a{color:#0c98df;text-decoration:none;font-weight:950;font-size:15px}.catalog-note{margin:-4px 0 14px;padding:13px 14px;border-radius:20px;background:linear-gradient(135deg,#fff7df,#ffe9b7);border:1px solid rgba(197,154,85,.32);box-shadow:0 10px 24px rgba(0,0,0,.06);color:#171717}.catalog-note b{display:block;font-size:15px;line-height:1.25}.catalog-note span{display:block;margin-top:4px;font-size:13px;line-height:1.35;color:#5d5144}.catalog-note a{display:inline-flex;margin-top:10px;color:#fff;background:#111;border-radius:999px;padding:10px 13px;text-decoration:none;font-weight:950;font-size:13px}.scroll-hint{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 10px}.scroll-hint span{font-size:13px;font-weight:900;color:#6b5a42}.scroll-controls{display:flex;gap:7px}.scroll-btn{width:38px;height:38px;border:0;border-radius:50%;background:#111;color:#fff;font-size:24px;line-height:1;font-weight:900;box-shadow:0 8px 18px rgba(0,0,0,.16)}.products{display:flex;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory;padding-bottom:8px;-webkit-overflow-scrolling:touch}.products::-webkit-scrollbar{display:none}.product{flex:0 0 78%;scroll-snap-align:start;background:#fff;color:#171717;text-decoration:none;border-radius:26px;padding:10px;box-shadow:0 10px 22px rgba(0,0,0,.09);border:2px solid rgba(0,0,0,.04);overflow:hidden}.product-img{width:100%;aspect-ratio:1/1;border-radius:20px;overflow:hidden;background:#eee}.product-img img{width:100%;height:100%;display:block;object-fit:cover}.product-info{padding:10px 2px 2px}.product b{display:block;font-size:17px;line-height:1.2;min-height:40px}.price{font-size:22px;font-weight:950;margin-top:6px;letter-spacing:-.2px}.code{font-size:13px;color:var(--muted);margin-top:4px}.mini-btn{background:#111;color:#fff;border-radius:999px;text-align:center;font-weight:950;font-size:15px;padding:12px 8px;margin-top:10px}.trust{display:grid;gap:10px}.trust-card{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:22px;padding:14px;border:1px solid var(--line);box-shadow:0 10px 22px rgba(0,0,0,.05)}.ico{width:36px;height:36px;border-radius:50%;background:#111;color:#fff;display:grid;place-items:center;flex:0 0 auto}.trust-card b{display:block;margin-bottom:3px}.trust-card span{font-size:13px;line-height:1.36;color:var(--muted)}.reviews{background:#111;color:#fff;margin:4px 16px 18px;border-radius:28px;padding:18px 14px}.reviews h2{margin:0 0 12px;font-size:26px}.reviews-box{overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);border-radius:20px;min-height:145px}.reviews-track{display:flex;transition:transform .42s ease}.review{min-width:100%;padding:16px;color:#fff;text-decoration:none}.review-text{font-size:14px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;white-space:pre-line}.review-meta{display:flex;justify-content:space-between;margin-top:12px;color:rgba(255,255,255,.62);font-size:12px}.dots{display:flex;justify-content:center;gap:6px;margin-top:10px}.dot{width:6px;height:6px;border-radius:50%;border:0;background:rgba(255,255,255,.3);padding:0}.dot.active{background:#fff}.final{margin:0 16px 20px;border-radius:30px;padding:22px 16px;text-align:center;background:linear-gradient(145deg,#fff,#f1e4d1);box-shadow:0 20px 45px rgba(0,0,0,.13)}.final h2{margin:0 0 8px;font-size:25px}.final p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}.sticky{position:fixed;left:50%;bottom:calc(12px + var(--safe-bottom));transform:translateX(-50%);width:min(488px,calc(100% - 24px));z-index:50}.sticky .cta{margin:0;border:2px solid rgba(255,255,255,.58)}@media(max-width:380px){.block-title h2{font-size:28px}.products{gap:10px}.product{border-radius:22px;padding:8px}.product-img{border-radius:17px}.product b{font-size:15px;min-height:36px}.price{font-size:20px}h1{font-size:27px}}
+</style>
 </head>
 <body>
-  <div class="tg-bg" aria-hidden="true">
-    <span class="bg-word bg-kv-1">KV</span>
-    <span class="bg-word bg-store-4">KAVISTORE</span>
-    <span class="bg-word bg-store-1">KAVISTORE</span>
-    <span class="bg-word bg-store-2">KAVISTORE</span>
-    <span class="bg-word bg-kv-2">KV</span>
-    <span class="bg-word bg-store-3">KAVISTORE</span>
-    <span class="bg-word bg-kv-3">KV</span>
+<div class="page">
+<header class="top">
+  <a class="brand js-tg-click" href="https://t.me/kavi_store"><img class="logo" src="assets/photos/kavistore-black-logo-final-v4.jpg" alt="KAVISTORE"><b>KAVISTORE</b><img class="verify" src="assets/telegram-verified.png" alt="verified"></a>
+  <a class="top-link js-tg-click" href="https://t.me/kavi_store">Каталог</a>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-card">
+    <img class="logo-big" src="assets/photos/kavistore-black-logo-final-v4.jpg" alt="KAVISTORE">
+    <h1>Одежда и обувь с доставкой</h1>
+    <p>Реальные фото товаров, актуальные цены, размеры и заказ через Telegram KAVISTORE.</p>
+    <div class="badges"><div class="badge"><strong>29 000+</strong>подписчиков</div><div class="badge"><strong>41 фото</strong>в витрине</div><div class="badge"><strong>Доставка</strong>Казахстан, Беларусь, Кыргызстан, Узбекистан</div><div class="badge"><strong>Размеры</strong>XXS–5XL</div></div>
+    <a class="cta js-tg-click" href="https://t.me/kavi_store">🔥 Смотреть каталог в Telegram</a><div class="under">Нажмите и выберите модель по фото или коду товара</div>
   </div>
+</section>
+<div class="strip"><div class="pill">🚚 Доставка</div><div class="pill">✅ Гарантия качества</div><div class="pill">📏 Помощь с размером</div><div class="pill">♻️ Обмен и возврат</div></div>
+<section>
+ <div class="block-title"><h2>Хиты из канала</h2><a class="js-tg-click" href="https://t.me/kavi_store">все товары</a></div>
+ <div class="catalog-note">
+  <b>🛍️ На сайте показана только часть товаров.</b>
+  <span>Полный ассортимент, ежедневные новинки, актуальные цены и все размеры доступны в Telegram-канале KAVISTORE.</span>
+  <a class="js-tg-click" href="https://t.me/kavi_store">📲 Открыть полный каталог</a>
+ </div>
+ <div class="scroll-hint"><span>⬅️ Листайте товары свайпом или кнопками →</span><div class="scroll-controls"><button class="scroll-btn" type="button" data-scroll="left" aria-label="Назад">‹</button><button class="scroll-btn" type="button" data-scroll="right" aria-label="Вперёд">›</button></div></div>
+ <div class="products" id="productsScroller"><a class="product js-tg-click" href="https://t.me/kavi_store" data-product="5317">
+  <div class="product-img"><img src="assets/products/product-01.webp" alt="Комплект мужской KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект мужской</b><div class="price">9000 ₸</div><div class="code">Код товара: 5317</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="5318">
+  <div class="product-img"><img src="assets/products/product-02.webp" alt="Комплект ❤️ KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект ❤️</b><div class="price">6500 ₸</div><div class="code">Код товара: 5318</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="5319">
+  <div class="product-img"><img src="assets/products/product-03.webp" alt="Комплект ❤️ KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект ❤️</b><div class="price">7000 ₸</div><div class="code">Код товара: 5319</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K004">
+  <div class="product-img"><img src="assets/products/product-04.webp" alt="Новая модель KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Новая модель</b><div class="price">Цена в Telegram</div><div class="code">Код товара: K004</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K005">
+  <div class="product-img"><img src="assets/products/product-05.webp" alt="Комплект KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект</b><div class="price">7000 ₸</div><div class="code">Код товара: K005</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K006">
+  <div class="product-img"><img src="assets/products/product-06.webp" alt="Костюм KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Костюм</b><div class="price">14000 ₸</div><div class="code">Код товара: K006</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K007">
+  <div class="product-img"><img src="assets/products/product-07.webp" alt="Хит продаж KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Хит продаж</b><div class="price">9000 ₸</div><div class="code">Код товара: K007</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K008">
+  <div class="product-img"><img src="assets/products/product-08.webp" alt="Комплект KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект</b><div class="price">6500 ₸</div><div class="code">Код товара: K008</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K009">
+  <div class="product-img"><img src="assets/products/product-09.webp" alt="Новинка KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Новинка</b><div class="price">7000 ₸</div><div class="code">Код товара: K009</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K010">
+  <div class="product-img"><img src="assets/products/product-10.webp" alt="Одежда KAVISTORE KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Одежда KAVISTORE</b><div class="price">Цена в Telegram</div><div class="code">Код товара: K010</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K011">
+  <div class="product-img"><img src="assets/products/product-11.webp" alt="Комплект мужской KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект мужской</b><div class="price">9000 ₸</div><div class="code">Код товара: K011</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K012">
+  <div class="product-img"><img src="assets/products/product-12.webp" alt="Комплект ❤️ KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект ❤️</b><div class="price">6500 ₸</div><div class="code">Код товара: K012</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K013">
+  <div class="product-img"><img src="assets/products/product-13.webp" alt="Комплект ❤️ KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект ❤️</b><div class="price">7000 ₸</div><div class="code">Код товара: K013</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K014">
+  <div class="product-img"><img src="assets/products/product-14.webp" alt="Новая модель KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Новая модель</b><div class="price">Цена в Telegram</div><div class="code">Код товара: K014</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K015">
+  <div class="product-img"><img src="assets/products/product-15.webp" alt="Комплект KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект</b><div class="price">7000 ₸</div><div class="code">Код товара: K015</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K016">
+  <div class="product-img"><img src="assets/products/product-16.webp" alt="Костюм KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Костюм</b><div class="price">14000 ₸</div><div class="code">Код товара: K016</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K017">
+  <div class="product-img"><img src="assets/products/product-17.webp" alt="Хит продаж KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Хит продаж</b><div class="price">9000 ₸</div><div class="code">Код товара: K017</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K018">
+  <div class="product-img"><img src="assets/products/product-18.webp" alt="Комплект KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект</b><div class="price">6500 ₸</div><div class="code">Код товара: K018</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K019">
+  <div class="product-img"><img src="assets/products/product-19.webp" alt="Новинка KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Новинка</b><div class="price">7000 ₸</div><div class="code">Код товара: K019</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K020">
+  <div class="product-img"><img src="assets/products/product-20.webp" alt="Одежда KAVISTORE KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Одежда KAVISTORE</b><div class="price">Цена в Telegram</div><div class="code">Код товара: K020</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K021">
+  <div class="product-img"><img src="assets/products/product-21.webp" alt="Комплект мужской KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект мужской</b><div class="price">9000 ₸</div><div class="code">Код товара: K021</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K022">
+  <div class="product-img"><img src="assets/products/product-22.webp" alt="Комплект ❤️ KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект ❤️</b><div class="price">6500 ₸</div><div class="code">Код товара: K022</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K023">
+  <div class="product-img"><img src="assets/products/product-23.webp" alt="Комплект ❤️ KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект ❤️</b><div class="price">7000 ₸</div><div class="code">Код товара: K023</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K024">
+  <div class="product-img"><img src="assets/products/product-24.webp" alt="Новая модель KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Новая модель</b><div class="price">Цена в Telegram</div><div class="code">Код товара: K024</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K025">
+  <div class="product-img"><img src="assets/products/product-25.webp" alt="Комплект KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект</b><div class="price">7000 ₸</div><div class="code">Код товара: K025</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K026">
+  <div class="product-img"><img src="assets/products/product-26.webp" alt="Костюм KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Костюм</b><div class="price">14000 ₸</div><div class="code">Код товара: K026</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K027">
+  <div class="product-img"><img src="assets/products/product-27.webp" alt="Хит продаж KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Хит продаж</b><div class="price">9000 ₸</div><div class="code">Код товара: K027</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K028">
+  <div class="product-img"><img src="assets/products/product-28.webp" alt="Комплект KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект</b><div class="price">6500 ₸</div><div class="code">Код товара: K028</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K029">
+  <div class="product-img"><img src="assets/products/product-29.webp" alt="Новинка KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Новинка</b><div class="price">7000 ₸</div><div class="code">Код товара: K029</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K030">
+  <div class="product-img"><img src="assets/products/product-30.webp" alt="Одежда KAVISTORE KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Одежда KAVISTORE</b><div class="price">Цена в Telegram</div><div class="code">Код товара: K030</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K031">
+  <div class="product-img"><img src="assets/products/product-31.webp" alt="Комплект мужской KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект мужской</b><div class="price">9000 ₸</div><div class="code">Код товара: K031</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K032">
+  <div class="product-img"><img src="assets/products/product-32.webp" alt="Комплект ❤️ KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект ❤️</b><div class="price">6500 ₸</div><div class="code">Код товара: K032</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K033">
+  <div class="product-img"><img src="assets/products/product-33.webp" alt="Комплект ❤️ KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект ❤️</b><div class="price">7000 ₸</div><div class="code">Код товара: K033</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K034">
+  <div class="product-img"><img src="assets/products/product-34.webp" alt="Новая модель KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Новая модель</b><div class="price">Цена в Telegram</div><div class="code">Код товара: K034</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K035">
+  <div class="product-img"><img src="assets/products/product-35.webp" alt="Комплект KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект</b><div class="price">7000 ₸</div><div class="code">Код товара: K035</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K036">
+  <div class="product-img"><img src="assets/products/product-36.webp" alt="Костюм KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Костюм</b><div class="price">14000 ₸</div><div class="code">Код товара: K036</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K037">
+  <div class="product-img"><img src="assets/products/product-37.webp" alt="Хит продаж KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Хит продаж</b><div class="price">9000 ₸</div><div class="code">Код товара: K037</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K038">
+  <div class="product-img"><img src="assets/products/product-38.webp" alt="Комплект KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект</b><div class="price">6500 ₸</div><div class="code">Код товара: K038</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K039">
+  <div class="product-img"><img src="assets/products/product-39.webp" alt="Новинка KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Новинка</b><div class="price">7000 ₸</div><div class="code">Код товара: K039</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K040">
+  <div class="product-img"><img src="assets/products/product-40.webp" alt="Одежда KAVISTORE KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Одежда KAVISTORE</b><div class="price">Цена в Telegram</div><div class="code">Код товара: K040</div><div class="mini-btn">Заказать</div></div>
+</a>
+<a class="product js-tg-click" href="https://t.me/kavi_store" data-product="K041">
+  <div class="product-img"><img src="assets/products/product-41.webp" alt="Комплект мужской KAVISTORE" loading="lazy"></div>
+  <div class="product-info"><b>Комплект мужской</b><div class="price">9000 ₸</div><div class="code">Код товара: K041</div><div class="mini-btn">Заказать</div></div>
+</a></div>
+</section>
+<section>
+ <div class="block-title"><h2>Почему выбирают нас</h2></div>
+ <div class="trust"><div class="trust-card"><div class="ico">📸</div><div><b>Реальные фото</b><span>На лендинге добавлены фотографии товаров из твоего архива.</span></div></div><div class="trust-card"><div class="ico">💬</div><div><b>Заказ через Telegram</b><span>Покупатель сразу переходит в канал и пишет менеджеру.</span></div></div><div class="trust-card"><div class="ico">📦</div><div><b>Быстрая доставка</b><span>Условия доставки и наличие размеров уточняются в Telegram.</span></div></div></div>
+</section>
+<section class="reviews"><h2>Отзывы покупателей</h2><div class="reviews-box"><div id="reviewsTrack" class="reviews-track"><div class="review"><div class="review-text">Загружаем отзывы...</div></div></div></div><div id="reviewsDots" class="dots"></div></section>
+<section class="final"><h2>Откройте каталог сейчас</h2><p>В Telegram больше фото, актуальные цены, наличие размеров и быстрый заказ у менеджера.</p><a class="cta js-tg-click" href="https://t.me/kavi_store">🛍️ Перейти в KAVISTORE</a></section>
+</main>
+</div><div class="sticky"><a class="cta js-tg-click" href="https://t.me/kavi_store">🔥 Смотреть каталог в Telegram</a></div>
+<script>
+(function(){
+ var scroller=document.getElementById('productsScroller');
+ if(!scroller)return;
+ document.querySelectorAll('[data-scroll]').forEach(function(btn){
+  btn.addEventListener('click',function(){
+   var dir=btn.getAttribute('data-scroll')==='left'?-1:1;
+   var card=scroller.querySelector('.product');
+   var step=card?card.getBoundingClientRect().width+12:320;
+   scroller.scrollBy({left:dir*step,behavior:'smooth'});
+  });
+ });
+})();
 
-  <div class="app">
-    <header class="topbar">
-      <a class="tg-brand" href="https://telegram.org/" aria-label="Telegram">
-        <span class="tg-brand-icon">
-          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.7 17.9 19c-.2 1-.8 1.2-1.6.7l-4.4-3.2-2.1 2c-.2.2-.4.4-.9.4l.3-4.5 8.2-7.4c.4-.3-.1-.5-.5-.2L6.8 13.2l-4.4-1.4c-1-.3-1-1 .2-1.4L19.7 3.8c.8-.3 1.5.2 1.1.9Z" fill="currentColor"/></svg>
-        </span>
-        <span>Telegram</span>
-      </a>
-    </header>
-
-    <main class="wrap">
-      <section class="card" aria-label="KAVISTORE Telegram">
-        <a class="avatar-link js-tg-click" href="https://t.me/kavi_store" aria-label="Открыть KAVISTORE в Telegram">
-          <img src="data:image/jpeg;base64,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" alt="KAVISTORE" width="104" height="104" />
-        </a>
-
-        <div class="title-row" dir="auto">
-          <div class="channel-title">KAVISTORE</div>
-          <img class="verified" src="assets/telegram-verified.png" alt="Verified" />
-        </div>
-        <div class="subscribers">40 022 subscribers</div>
-
-        <div class="action">
-          <a id="telegramButton" class="tg-button js-tg-click" href="tg://join?invite=7elanTqLWBc1MjM0">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.8 4.7 17.9 19c-.2 1-.8 1.2-1.6.7l-4.4-3.2-2.1 2c-.2.2-.4.4-.9.4l.3-4.5 8.2-7.4c.4-.3-.1-.5-.5-.2L6.8 13.2l-4.4-1.4c-1-.3-1-1 .2-1.4L19.7 3.8c.8-.3 1.5.2 1.1.9Z" fill="currentColor"/></svg>
-            <span>Открыть в Telegram</span>
-          </a>
-        </div>
-
-        <section class="reviews" aria-label="Отзывы покупателей">
-          <div class="reviews-head">
-            <div class="reviews-title"><span>✓</span>Отзывы</div>
-            <a class="reviews-link" href="https://t.me/otziv_kavistore" target="_blank" rel="noopener">@otziv_kavistore</a>
-          </div>
-          <div class="reviews-box">
-            <div id="reviewsTrack" class="reviews-track">
-              <div class="loading">Загружаем отзывы...</div>
-            </div>
-          </div>
-          <div id="reviewsDots" class="dots" aria-hidden="true"></div>
-        </section>
-      </section>
-    </main>
-  </div>
-
-  <script>
-    (function () {
-      var links = document.querySelectorAll('.js-tg-click');
-      links.forEach(function (link) {
-        link.addEventListener('click', function (event) {
-          var href = link.getAttribute('href');
-          if (!href) return;
-          event.preventDefault();
-          try {
-            if (window.fbq) {
-              fbq('track', 'Lead');
-              fbq('trackCustom', 'TelegramClick', {
-                channel: 'kavi_store',
-                source: 'mobile_github_landing'
-              });
-            }
-          } catch (e) {}
-          setTimeout(function () { window.location.href = href; }, 300);
-        });
-      });
-    })();
-
-    (function () {
-      var track = document.getElementById('reviewsTrack');
-      var dots = document.getElementById('reviewsDots');
-      if (!track || !dots) return;
-
-      var fallbackReviews = [
-        {"text":"Заказ пришёл, качество хорошее. Менеджер быстро ответил и помог подобрать размер.","meta":"Отзыв клиента","link":"https://t.me/otziv_kavistore"},
-        {"text":"Получил товар, всё как на фото. Спасибо за быструю консультацию и оформление.","meta":"Отзыв клиента","link":"https://t.me/otziv_kavistore"},
-        {"text":"Оформили быстро, менеджер был на связи. Буду заказывать ещё.","meta":"Отзыв клиента","link":"https://t.me/otziv_kavistore"},
-        {"text":"Пришла моя посылка в город Ош за 2 дня. Костюм жилета и кроссовки, все отлично 👍🏻\nВсе пришло в том виде как и говорили, качество отличное, к телу очень приятный. Спасибо вам больше ❤️","meta":"Отзыв клиента (Ош • 2 дня)","link":"https://t.me/otziv_kavistore"},
-        {"text":"Добрый день. Костюм пришел в Алмату за 2 дня. Все супер спасибо, доставили прямо на дом 🩷","meta":"Отзыв клиента (Алматы • 2 дня)","link":"https://t.me/otziv_kavistore"},
-        {"text":"Камила, спасибо большое за джинсы ❤️\nВ Беларусь пришли очень быстро, я прям честно не ожидала что так быстро приедет. Качество отличное, материал также отличный. Буду обращаться к вам ещё 😘","meta":"Отзыв клиента (Беларусь • быстрая доставка)","link":"https://t.me/otziv_kavistore"},
-        {"text":"Камила, добрый день. Получила костюм в Минске на Европочте, все пришло без проблем за 5 дней. Спасибо вам большое. Качество великолепно, уже стирала его — ничего не скатывается, все хорошо. Буду делать ещё заказы у вас спасибо","meta":"Отзыв клиента (Минск • 5 дней)","link":"https://t.me/otziv_kavistore"},
-        {"text":"Бишкек шаарына болгону 3 күндө жетип келди, абдан тез. Куртка жылуу, жеңил жана үстүмдө абдан кооз көрүнөт. Өлчөмү да идеалдуу туура келди, кийүүгө абдан ыңгайлуу.","meta":"Отзыв клиента (Бишкек • 3 күн)","link":"https://t.me/otziv_kavistore"}
-      ];
-      var reviews = [];
-      var current = 0;
-      var timer = null;
-      var startX = 0;
-
-      function escapeHtml(value) {
-        return String(value || '')
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;')
-          .replace(/"/g, '&quot;')
-          .replace(/'/g, '&#039;');
-      }
-
-      function safeUrl(value) {
-        value = String(value || '').trim();
-        if (!value) return '';
-        if (value.indexOf('//') === 0) value = 'https:' + value;
-        if (!/^https:\/\//i.test(value)) return '';
-        return value.replace(/"/g, '%22').replace(/</g, '%3C').replace(/>/g, '%3E');
-      }
-
-      function normalize(items) {
-        return (items || [])
-          .filter(function (item) { return item && ((item.text && item.text.trim().length > 3) || item.image); })
-          .slice(0, 20)
-          .map(function (item) {
-            return {
-              text: item.text ? item.text.trim() : '',
-              image: safeUrl(item.image || item.photo || ''),
-              link: safeUrl(item.link || ''),
-              meta: item.date || item.meta || 'Отзыв из Telegram'
-            };
-          });
-      }
-
-      function render(items) {
-        reviews = normalize(items);
-        if (!reviews.length) reviews = normalize(fallbackReviews);
-
-        track.innerHTML = reviews.map(function (review) {
-          var imageHtml = review.image ? '<div class="review-image-wrap"><img class="review-image" src="' + escapeHtml(review.image) + '" alt="Отзыв" loading="lazy" onerror="this.parentElement.remove()"></div>' : '';
-          var textHtml = review.text ? '<div class="review-text">' + escapeHtml(review.text) + '</div>' : '';
-          var open = review.link ? '<a class="review" href="' + escapeHtml(review.link) + '" target="_blank" rel="noopener">' : '<article class="review">';
-          var close = review.link ? '</a>' : '</article>';
-          return open + imageHtml + textHtml + '<div class="review-meta"><span>' + escapeHtml(review.meta) + '</span><span class="review-badge">Telegram</span></div>' + close;
-        }).join('');
-
-        dots.innerHTML = reviews.map(function (_, index) {
-          return '<button class="dot' + (index === 0 ? ' active' : '') + '" type="button" data-index="' + index + '" aria-label="Отзыв ' + (index + 1) + '"></button>';
-        }).join('');
-
-        dots.querySelectorAll('.dot').forEach(function (dot) {
-          dot.addEventListener('click', function () { goTo(Number(dot.getAttribute('data-index') || 0)); restart(); });
-        });
-
-        track.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
-        track.addEventListener('touchend', function(e) {
-          var endX = e.changedTouches[0].clientX;
-          var diff = endX - startX;
-          if (Math.abs(diff) > 38) { goTo(current + (diff < 0 ? 1 : -1)); restart(); }
-        }, { passive: true });
-
-        goTo(0);
-        restart();
-      }
-
-      function goTo(index) {
-        if (!reviews.length) return;
-        current = (index + reviews.length) % reviews.length;
-        track.style.transform = 'translateX(-' + (current * 100) + '%)';
-        dots.querySelectorAll('.dot').forEach(function (dot, i) { dot.classList.toggle('active', i === current); });
-      }
-
-      function restart() {
-        if (timer) clearInterval(timer);
-        if (reviews.length > 1) timer = setInterval(function () { goTo(current + 1); }, 3400);
-      }
-
-      fetch('reviews.json?v=' + Date.now(), { cache: 'no-store' })
-        .then(function (res) { if (!res.ok) throw new Error('reviews.json'); return res.json(); })
-        .then(function (data) { render(data && data.reviews ? data.reviews : fallbackReviews); })
-        .catch(function () { render(fallbackReviews); });
-    })();
-  </script>
-</body>
-</html>
+(function(){
+ document.querySelectorAll('.js-tg-click').forEach(function(link){link.addEventListener('click',function(e){e.preventDefault();var href=link.href;var isProduct=!!link.closest('.product');var label=(link.innerText||'Telegram').trim().slice(0,80);try{if(window.fbq){var payload={channel:'kavi_store',source:'kavistore_landing',button_text:label};fbq('track','Contact',payload);fbq('track','Lead',payload);if(isProduct){fbq('track','ViewContent',{content_name:label,content_category:'KAVISTORE product'});fbq('track','InitiateCheckout',{content_name:label})}fbq('trackCustom','TelegramClick',payload);}}catch(err){}setTimeout(function(){location.href=href},350);})})
+})();
+(function(){
+ var fallback=[{"text": "Заказ пришёл, качество хорошее. Менеджер быстро ответил и помог подобрать размер.", "meta": "Резервный отзыв", "link": "https://t.me/otziv_kavistore"}, {"text": "Получил товар, всё как на фото. Спасибо за быструю консультацию и оформление.", "meta": "Резервный отзыв", "link": "https://t.me/otziv_kavistore"}, {"text": "Оформили быстро, менеджер был на связи. Буду заказывать ещё.", "meta": "Резервный отзыв", "link": "https://t.me/otziv_kavistore"}, {"text": "Пришла моя посылка в город Ош за 2 дня. Костюм жилета и кроссовки, все отлично 👍🏻\nВсе пришло в том виде как и говорили, качество отличное, к телу очень приятный. Спасибо вам больше ❤️", "meta": "Ош • 2 дня", "link": "https://t.me/otziv_kavistore"}, {"text": "Добрый день. Костюм пришел в Алмату за 2 дня. Все супер спасибо, доставили прямо на дом 🩷", "meta": "Алматы • 2 дня", "link": "https://t.me/otziv_kavistore"}, {"text": "Камила, спасибо большое за джинсы ❤️\nВ Беларусь пришли очень быстро, я прям честно не ожидала что так быстро приедет. Качество отличное, материал также отличный. Буду обращаться к вам ещё 😘", "meta": "Беларусь • быстрая доставка", "link": "https://t.me/otziv_kavistore"}, {"text": "Камила, добрый день. Получила костюм в Минске на Европочте, все пришло без проблем за 5 дней. Спасибо вам большое. Качество великолепно, уже стирала его — ничего не скатывается, все хорошо. Буду делать ещё заказы у вас спасибо", "meta": "Минск • 5 дней", "link": "https://t.me/otziv_kavistore"}, {"text": "Бишкек шаарына болгону 3 күндө жетип келди, абдан тез. Куртка жылуу, жеңил жана үстүмдө абдан кооз көрүнөт. Өлчөмү да идеалдуу туура келди, кийүүгө абдан ыңгайлуу.", "meta": "Бишкек • 3 күн", "link": "https://t.me/otziv_kavistore"}];var track=document.getElementById('reviewsTrack'),dots=document.getElementById('reviewsDots'),reviews=[],current=0,timer=null,startX=0;if(!track||!dots)return;
+ function esc(v){return String(v||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;')}
+ function norm(items){return (items||[]).filter(function(i){return i&&i.text}).slice(0,10).map(function(i){return{text:i.text,meta:i.meta||i.date||'Отзыв',link:i.link||'https://t.me/otziv_kavistore'}})}
+ function render(items){reviews=norm(items);if(!reviews.length)reviews=norm(fallback);track.innerHTML=reviews.map(function(r){return '<a class="review" href="'+esc(r.link)+'" target="_blank"><div class="review-text">'+esc(r.text)+'</div><div class="review-meta"><span>'+esc(r.meta)+'</span><span>Telegram</span></div></a>'}).join('');dots.innerHTML=reviews.map(function(_,i){return '<button class="dot'+(i===0?' active':'')+'" data-index="'+i+'"></button>'}).join('');dots.querySelectorAll('.dot').forEach(function(d){d.onclick=function(){go(+d.dataset.index);restart()}});go(0);restart()}
+ function go(i){if(!reviews.length)return;current=(i+reviews.length)%reviews.length;track.style.transform='translateX(-'+current*100+'%)';dots.querySelectorAll('.dot').forEach(function(d,n){d.classList.toggle('active',n===current)})}
+ function restart(){clearInterval(timer);if(reviews.length>1)timer=setInterval(function(){go(current+1)},3600)}
+ fetch('reviews.json?v='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():{reviews:fallback}}).then(function(d){render(d.reviews||fallback)}).catch(function(){render(fallback)})
+})();
+</script>
+</body></html>

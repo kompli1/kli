@@ -1,16 +1,18 @@
-KAVISTORE Mobile Telegram Landing — фикс загрузки фото
+KAVISTORE — готовый лендинг с реальными фото товаров
 
-Что исправлено:
-- Фото канала больше не зависит от временной ссылки Telegram CDN: добавлен локальный assets/kavistore-avatar.svg.
-- Фото отзывов из Telegram при автообновлении скачиваются в assets/reviews/ и подставляются локально.
-- Если Telegram всё равно заблокирует внешнюю картинку, страница не покажет битую иконку, а аккуратно уберёт пустое изображение.
-- GitHub Actions теперь коммитит не только reviews.json, но и assets/reviews/*.
+Что сделано:
+- Добавлены реальные фото товаров из архива: 41 шт.
+- Карточки сделаны крупным форматом 2×2, как на скриншоте.
+- Добавлен логотип KAVISTORE и синяя галочка Telegram.
+- Оставлен Meta Pixel ID: 1676612600147113.
+- Добавлены события на клики по Telegram: Contact, Lead, ViewContent, InitiateCheckout и TelegramClick.
+- Сохранены reviews.json, CNAME и скрипт отзывов.
 
-Как загрузить на GitHub Pages:
-1. Распакуй ZIP.
-2. Загрузи ВСЕ файлы и папки в корень репозитория: index.html, assets, scripts, .github, reviews.json, .nojekyll.
-3. В GitHub открой Settings → Pages → Deploy from a branch → main → /root.
-4. После загрузки открой Actions → Update Telegram reviews → Run workflow, чтобы сразу подтянуть отзывы и фото.
+Как загрузить:
+1. Распакуйте архив.
+2. Загрузите все файлы в корень GitHub Pages или на сервер.
+3. Проверьте, что index.html, reviews.json, CNAME и папка assets лежат в корне.
+4. Все кнопки ведут на https://t.me/kavi_store.
 
-Важно:
-GitHub Pages не выполняет PHP, поэтому всё работает через reviews.json + GitHub Actions.
+Примечание:
+Для товаров без точной цены в исходных фото указано «Цена в Telegram», чтобы не ставить случайные цены.
