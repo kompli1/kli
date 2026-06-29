@@ -1,0 +1,416 @@
+{
+  "channel": "kavi_store",
+  "count": 41,
+  "products": [
+    {
+      "id": "1",
+      "code": "5317",
+      "title": "Комплект мужской",
+      "price": "9000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-01.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "2",
+      "code": "5318",
+      "title": "Комплект ❤️",
+      "price": "6500 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-02.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "3",
+      "code": "5319",
+      "title": "Комплект ❤️",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-03.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "4",
+      "code": "K004",
+      "title": "Новая модель",
+      "price": "Цена в Telegram",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-04.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "5",
+      "code": "K005",
+      "title": "Комплект",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-05.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "6",
+      "code": "K006",
+      "title": "Костюм",
+      "price": "14000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-06.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "7",
+      "code": "K007",
+      "title": "Хит продаж",
+      "price": "9000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-07.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "8",
+      "code": "K008",
+      "title": "Комплект",
+      "price": "6500 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-08.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "9",
+      "code": "K009",
+      "title": "Новинка",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-09.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "10",
+      "code": "K010",
+      "title": "Одежда KAVISTORE",
+      "price": "Цена в Telegram",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-10.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "11",
+      "code": "K011",
+      "title": "Комплект мужской",
+      "price": "9000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-11.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "12",
+      "code": "K012",
+      "title": "Комплект ❤️",
+      "price": "6500 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-12.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "13",
+      "code": "K013",
+      "title": "Комплект ❤️",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-13.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "14",
+      "code": "K014",
+      "title": "Новая модель",
+      "price": "Цена в Telegram",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-14.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "15",
+      "code": "K015",
+      "title": "Комплект",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-15.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "16",
+      "code": "K016",
+      "title": "Костюм",
+      "price": "14000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-16.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "17",
+      "code": "K017",
+      "title": "Хит продаж",
+      "price": "9000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-17.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "18",
+      "code": "K018",
+      "title": "Комплект",
+      "price": "6500 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-18.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "19",
+      "code": "K019",
+      "title": "Новинка",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-19.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "20",
+      "code": "K020",
+      "title": "Одежда KAVISTORE",
+      "price": "Цена в Telegram",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-20.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "21",
+      "code": "K021",
+      "title": "Комплект мужской",
+      "price": "9000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-21.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "22",
+      "code": "K022",
+      "title": "Комплект ❤️",
+      "price": "6500 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-22.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "23",
+      "code": "K023",
+      "title": "Комплект ❤️",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-23.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "24",
+      "code": "K024",
+      "title": "Новая модель",
+      "price": "Цена в Telegram",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-24.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "25",
+      "code": "K025",
+      "title": "Комплект",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-25.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "26",
+      "code": "K026",
+      "title": "Костюм",
+      "price": "14000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-26.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "27",
+      "code": "K027",
+      "title": "Хит продаж",
+      "price": "9000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-27.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "28",
+      "code": "K028",
+      "title": "Комплект",
+      "price": "6500 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-28.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "29",
+      "code": "K029",
+      "title": "Новинка",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-29.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "30",
+      "code": "K030",
+      "title": "Одежда KAVISTORE",
+      "price": "Цена в Telegram",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-30.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "31",
+      "code": "K031",
+      "title": "Комплект мужской",
+      "price": "9000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-31.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "32",
+      "code": "K032",
+      "title": "Комплект ❤️",
+      "price": "6500 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-32.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "33",
+      "code": "K033",
+      "title": "Комплект ❤️",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-33.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "34",
+      "code": "K034",
+      "title": "Новая модель",
+      "price": "Цена в Telegram",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-34.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "35",
+      "code": "K035",
+      "title": "Комплект",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-35.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "36",
+      "code": "K036",
+      "title": "Костюм",
+      "price": "14000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-36.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "37",
+      "code": "K037",
+      "title": "Хит продаж",
+      "price": "9000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-37.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "38",
+      "code": "K038",
+      "title": "Комплект",
+      "price": "6500 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-38.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "39",
+      "code": "K039",
+      "title": "Новинка",
+      "price": "7000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-39.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "40",
+      "code": "K040",
+      "title": "Одежда KAVISTORE",
+      "price": "Цена в Telegram",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-40.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    },
+    {
+      "id": "41",
+      "code": "K041",
+      "title": "Комплект мужской",
+      "price": "9000 ₸",
+      "sizes": "Размеры уточняйте",
+      "image": "assets/products/product-41.webp",
+      "link": "https://t.me/kavi_store",
+      "manager_link": "https://t.me/kavi_manager"
+    }
+  ]
+}
